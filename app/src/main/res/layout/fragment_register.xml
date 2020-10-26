@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AC5F59"
+    android:orientation="vertical"
+    tools:context=".fragments.RegisterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="409dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Registrasi Anggota Online"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtnama"
+            android:layout_width="139dp"
+            android:layout_height="44dp"
+            android:text="Nama :"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/a"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <EditText
+            android:id="@+id/edtnama"
+            android:layout_width="269dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="50dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="411dp"
+            android:layout_height="47dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="92dp">
+
+            <TextView
+                android:id="@+id/txtjeniskelamin"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin :"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbwanita"
+                android:layout_width="143dp"
+                android:layout_height="47dp"
+                android:text="Wanita"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rblaki"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:text="Laki-Laki"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtalamat"
+            android:layout_width="140dp"
+            android:layout_height="85dp"
+            android:text="Alamat :"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+        <EditText
+            android:id="@+id/edtalamat"
+            android:layout_width="268dp"
+            android:layout_height="83dp"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <TextView
+            android:id="@+id/txtnotelp"
+            android:layout_width="140dp"
+            android:layout_height="46dp"
+            android:text="No Telpon :"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="224dp" />
+
+        <EditText
+            android:id="@+id/edtnotelp"
+            android:layout_width="270dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="224dp" />
+
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="140dp"
+            android:layout_height="54dp"
+            android:text="Email : "
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="270dp" />
+
+        <EditText
+            android:id="@+id/edtemail"
+            android:layout_width="274dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            tools:layout_editor_absoluteY="272dp" />
+
+        <TextView
+            android:id="@+id/txtusername"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:text="Username :"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <EditText
+            android:id="@+id/edtusername"
+            android:layout_width="274dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <TextView
+            android:id="@+id/txtpekerjaan"
+            android:layout_width="140dp"
+            android:layout_height="42dp"
+            android:text="Pekerjaan :"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="369dp" />
+
+        <EditText
+            android:id="@+id/edtpekerjaan"
+            android:layout_width="270dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="369dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
